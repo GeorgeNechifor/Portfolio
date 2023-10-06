@@ -1,0 +1,131 @@
+
+
+:root{
+    --purpleColor:#9F4298;
+    --greenColor:#CFDB31;
+    --lightPurple:#D1AFD3;
+    --grayColor:#E6E7E8;
+    --smoke:#F0F0F0;
+    --brightRed:#E7473C;
+
+
+}
+
+
+
+
+.pro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4rem;
+    gap: 30px;
+    
+    
+
+}
+.project:nth-child(2){
+    position: relative;
+    bottom: 4rem;
+}
+.projects-container{
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    height: 90vh;
+}
+.tools-used{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    gap: 5px;
+}
+.tools-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+.project{
+    width: 470px;
+    height: 550px;
+    border-radius: 5px;
+    padding: 8px 0px;
+    display: grid;
+    gap: 15px;
+    place-items: center;
+  
+
+}
+.img-project{
+    width: 90%;
+    height: 270px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 200ms;
+    top: -2rem;
+}
+.img-project:hover{
+    transform: scale(1.05);
+}
+.title-project{
+    font-size: 25px;
+    color:#3f3f3f;
+    background-color: #f65a4f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--smoke);
+}
+.tol{
+    background-color: var(--brightRed);
+    color: var(--smoke);
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+h2{
+    color:#3f3f3f;
+
+}
+.desc-project{
+   color: #333;
+   font-size: 19px;
+   text-align: center;
+   width: 90%;
+}
+.info{
+    display: grid;
+    place-items: center;
+}
+@media only screen and (max-width: 1000px) {
+    .pro{
+        display: grid;
+        top: 1rem;
+    }
+    .project:nth-child(3){
+        position: relative;
+        bottom: 8rem;
+    }
+    .projects-container{
+        top: 1rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .img-project{
+        width: 85%;
+    }
+    .project{
+        width: 400px;
+    }
+    .desc-project{
+        width: 300px;
+    }
+    
+
+}
